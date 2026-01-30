@@ -1,106 +1,49 @@
-WP API Endpoints Explorer
-========================
+# WP API Endpoints Explorer
 
-WP API Endpoints Explorer is a WordPress admin plugin that helps developers
-view, manage, and export REST API endpoints available on a WordPress site.
+WP API Endpoints Explorer is a powerful WordPress admin plugin that provides
+secure JWT authentication and a visual interface to explore, manage, and export
+WordPress REST API endpoints.
 
-It provides a clean admin UI to explore WordPress core, custom post types,
-and WooCommerce REST endpoints, with support for exporting documentation
-to OpenAPI (Swagger) and Postman formats.
-
---------------------------------------------------
-
-FEATURES
---------
-
-- View WordPress REST API endpoints in one place
-- Supports Posts, Pages, Custom Post Types, and WooCommerce
-- Copy endpoint URLs with one click
+## 🚀 Features
+- JWT Authentication for WordPress REST API
+- Visual REST API Explorer inside WordPress Admin
+- Toggle visibility of Posts, Pages, CPTs, and WooCommerce endpoints
 - Export API documentation as:
   - OpenAPI (Swagger) JSON
-  - Postman Collection v2.1
-- Secure admin-only access
-- Clean WordPress coding standards
-- CSS and JS loaded as separate assets
+  - Postman Collection (v2.1)
+- AES-256 encrypted content endpoint
+- Clean, lightweight admin UI (no external dependencies)
 
---------------------------------------------------
+## 🧩 Supported Endpoints
+- WordPress Core (Posts, Pages)
+- Custom Post Types (REST-enabled)
+- WooCommerce (Products, Orders, Coupons)
+- Custom JWT-protected endpoints
 
-INSTALLATION
-------------
+## 🔐 Security
+- JWT-based authentication
+- Optional public API visibility
+- Encrypted content endpoint using AES-256-CBC
+- Admin-only export access
 
-1. Upload the plugin folder to:
-   wp-content/plugins/wp-api-endpoints-explorer
-2. Activate the plugin from WordPress Admin → Plugins
-3. Go to Admin → API Explorer
+## 📦 Installation
+1. Download or clone this repository
+2. Upload the plugin folder to `/wp-content/plugins/`
+3. Activate **WP API Endpoints Explorer**
+4. Go to **WP Admin → API Explorer**
 
---------------------------------------------------
+## 📤 Export Options
+- OpenAPI (Swagger) JSON
+- Postman Collection
 
-PERMISSIONS
------------
+## 🛠 Tech Stack
+- PHP (WordPress Plugin APIs)
+- JavaScript (Vanilla)
+- CSS (Admin UI)
 
-The plugin uses a custom capability:
+## 📄 License
+GPLv2 or later
 
-    manage_api_explorer
-
-This capability is automatically assigned to Administrators
-on plugin activation.
-
-Only users with this capability can:
-- Access the API Explorer admin page
-- Export OpenAPI / Postman documentation
-- Access export REST endpoints
-
---------------------------------------------------
-
-PLUGIN STRUCTURE
-----------------
-
-wp-api-endpoints-explorer/
-│
-├── wp-api-endpoints-explorer.php
-├── includes/
-│   └── class-wp-api-endpoints-explorer-admin.php
-├── assets/
-│   ├── css/
-│   │   └── admin.css
-│   └── js/
-│       └── admin.js
-
---------------------------------------------------
-
-EXPORT ENDPOINTS
-----------------
-
-OpenAPI (Swagger):
-/wp-json/endpoints-explorer/v1/openapi
-
-Postman Collection:
-/wp-json/endpoints-explorer/v1/postman
-
-Note:
-These endpoints are accessible only to users
-with admin privileges.
-
---------------------------------------------------
-
-COMPATIBILITY
--------------
-
-- WordPress 6.x
-- PHP 8.0+
-- WooCommerce (optional)
-
---------------------------------------------------
-
-LICENSE
--------
-
-GPL v2 or later
-
---------------------------------------------------
-
-AUTHOR
-------
-
-WP API Endpoints Explorer
-Built for WordPress developers working with REST APIs.
+## 👩‍💻 Author
+**Pushpasharmila S**  
+GitHub: https://github.com/Pushpa2611
